@@ -1,17 +1,21 @@
 {
-  "name": "ai-mineflayer",
+  "name": "minecraft-ai-bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Autonomous Minecraft bot powered by Mineflayer + Ollama llama3.1 + Python task planner",
+  "main": "bot/bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bot/bot.js",
+    "dev": "node --watch bot/bot.js",
+    "planner": "python ai/task_planner.py"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["minecraft", "mineflayer", "ollama", "llama3.1", "ai", "autonomous", "bot"],
+  "license": "MIT",
   "dependencies": {
-    "mineflayer": "^4.35.0",
+    "mineflayer": "^4.21.0",
     "mineflayer-pathfinder": "^2.4.5",
-    "node-fetch": "^3.3.2"
-  },
-  "description": ""
+    "vec3": "^0.1.10",
+    "axios": "^1.6.7",
+    "minecraft-data": "^3.54.0",
+    "prismarine-item": "^1.14.0"
+  }
 }

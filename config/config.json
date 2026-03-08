@@ -1,0 +1,31 @@
+{
+  "minecraft": {
+    "host": "Hot-Snow.play.hosting",
+    "port": 25565,
+    "username": "Misaki",
+    "version": "1.21.11",
+    "auth": "offline"
+  },
+  "ai": {
+    "plannerUrl": "http://localhost:5000",
+    "plannerPort": 5000,
+    "model": "llama3.1",
+    "ollamaUrl": "http://localhost:11434",
+    "maxRetries": 3,
+    "timeoutMs": 30000
+  },
+"bot": {
+    "tickRate": 2000,
+    "explorationRadius": 32,
+    "maxTaskQueueSize": 10,
+    "dangerHealthThreshold": 6,
+    "hungerThreshold": 10,
+    "logLevel": "info",
+    "stuckTimeoutMs": 8000
+  },
+  "pathfinder": {
+    "movementAllowParkour": true,
+    "movementCanDig": true,
+    "maxDropDown": 4
+  }
+}
